@@ -90,7 +90,7 @@ color: var(--primary-txt-cl);
 
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1200px;
+    max-width: 1158px;
   }  
 }
 
@@ -529,20 +529,85 @@ background: var(--light-bg)
 
 
 .footer {
-/* display: flex;
-flex-wrap: wrap; */
 background: #2E2F42;
 padding-top: 96px;
 padding-bottom: 96px;
-
 }
 
-.footer-container {
-
-    /* display: flex; */
+.socmedia {
+    display: flex;
+    flex-wrap: wrap;
+    width: 208px;
+    height: 80px;
+    margin: 72px auto;
 }
 
+.form-footer {
+    justify-content: center;
+}
 
+.text-form-footer {
+    display: block;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #FFFFFF;
+}
+
+.footer-form-label {
+    width: 100%;
+}
+
+.button-footer {
+    display: flex;
+    margin: auto;
+    height: 40px;
+    padding: 8px 24px;
+    background-color: #4D5AE5;
+    border: none;
+    border-radius: 4px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color, background-color;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.06em;
+    color: var(--accent-txt-cl);
+}
+
+@media screen and (min-width:768px) {
+    .footer-link-social {
+        display: flex;
+        margin-left: 92px;
+        }
+    .socmedia {
+        margin: 0px 0px 0px 24px;
+        }
+    .subscrible-wrapper {
+        margin-left: 92px;
+        margin-top: 72px;
+        }
+    .form-footer {
+        display: flex;
+        justify-content: start;
+        }
+    .subscrible-wrapper {
+        margin-left: 92px;
+        margin-top: 72px;
+        } 
+    .footer-form-label {
+        width: 264px;
+        }
+    .text-form-footer {
+        text-align: start;
+        }
+    .button-footer {
+        margin: 16px 0px 0px 24px;
+        }
+}
 
 
 .logo-footer {
@@ -557,22 +622,14 @@ padding-bottom: 96px;
     height: 72px;
 }
 
-.socmedia {
+.social-footer {
     display: flex;
-    flex-wrap: wrap;
-    width: 208px;
-    height: 80px;
-    margin: 72px auto;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
    }
 
-   .social-footer {
-       display: flex;
-       align-items: center;
-       justify-content: center;
-       gap: 16px;
-   }
-
-   .footer-link {
+.footer-link {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -588,6 +645,8 @@ padding-bottom: 96px;
     font-size: 16px;
     line-height: calc(24 / 16);
 }
+
+
 
 .social-link-footer {
 display: flex;
@@ -612,34 +671,11 @@ fill: var(--accent-txt-cl);
     background-color: #31D0AA;
 }
 
-.subscrible-wrapper {
-   
-}
-
 .subscrible-icon {
 display: inline-block;
 margin-left: 16px;
 fill: #FFFFFF;
 }
-
-.form-footer {
-/* display: flex;
-justify-content: center; */
-}
-
-.text-form-footer {
-display: block;
-text-align: center;
-font-weight: 600;
-font-size: 16px;
-line-height: 1.5;
-color: #FFFFFF;
-}
-
-/* .footer-form-label {
-width: 80px;
-} */
-
 
 .footer-form-field {
     width: 100%;
@@ -661,24 +697,38 @@ width: 80px;
     color: rgba(255, 255, 255, 0.6);
 }
 
-.button-footer {
-display: flex;
-margin: auto;
-height: 40px;
-padding: 8px 24px;
-background-color: #4D5AE5;
-border: none;
-border-radius: 4px;
-transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-transition-property: color, background-color;
+@media screen and (min-width:1200) {
+    .footer-container {
+        display: flex;
+         }
+    .socmedia {
+        display: flex;
+        flex-wrap: wrap;
+        width: 208px;
+        height: 80px;
+        margin: 0px 0px 0px 80px;
+        }
+    .social-footer {
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        }
+    .form-footer {
+        justify-content: center;
+        }
+    .text-form-footer {
+        margin-bottom: 16px;
+        }
 
-font-weight: 700;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.06em;
-color: var(--accent-txt-cl);
+    .footer-link-social {
+        margin-left: 0px;
+        }
+    .subscrible-wrapper {
+        width: 453px;
+        margin: 0px 0px 0px 80px;
+    }
 }
+
 
 
 
