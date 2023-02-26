@@ -198,7 +198,7 @@ color: var(--secondary-bg-cl);
 margin: 0 auto;
 max-width: 1440px;
 background-color: #2E2F42;
-padding: 192px 0px;
+padding: 112px 0px;
 background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../images/people-office\ 1.jpg);
 background-size: cover; 
 background-position: center;
@@ -208,11 +208,11 @@ background-repeat: no-repeat;
 
 .hero-title {
     font-weight: 700;
-        font-size: 56px;
-        line-height: calc(60/56);
+    font-size: 36px;
+    line-height: calc(40 / 36);
     color: #FFFFFF ;
     text-align: center;
-    margin-bottom: 48px;
+    margin-bottom: 72px;
 }
 
 .hero-btn {
@@ -238,6 +238,28 @@ transition-property: background-color, box-shadow;
 .hero-btn:focus {
 background-color: var(--hover-bt);
 }
+
+@media screen and (min-width:768px) {
+    .hero {
+        padding: 112px 0px 108px 0px;
+    }
+    .hero-title {
+        font-size: 56px;
+        line-height: calc(60 / 56);
+        margin-bottom: 40px;
+        /* margin-bottom: 48px; */
+        }
+}
+
+@media screen and (min-width: 1200px) {
+    .hero {
+         padding: 188px 0px;
+    }
+    .hero-title {
+        margin-bottom: 48px;
+    }
+}
+
 
 /* section 1 */
 
