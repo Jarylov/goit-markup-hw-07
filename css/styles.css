@@ -297,9 +297,8 @@ h2 {
 
 /* section 3 */
 .section-three {
-    padding-top: 120px;
-    padding-bottom: 120px;
-    
+   padding-top: 96px;
+   padding-bottom: 128px;
 }
 
 .card {
@@ -321,8 +320,11 @@ h2 {
 
 .flexbox-container {
     display: flex;
-    justify-content: space-between;
-}
+    flex-direction: column;
+    gap: 72px;
+    justify-content: center;
+    align-items: center;
+   }
 
 .social {
 display: flex;
@@ -353,6 +355,30 @@ fill: var(--accent-txt-cl);
 .social-link:hover, 
 .social-link:focus {
   background-color: var(--hover-bt);
+}
+
+@media screen and (min-width:768px) {
+    .section-three {
+    padding-bottom: 104px;
+    }
+    .flexbox-container {
+     flex-direction: row;
+     row-gap: 16px;
+     column-gap: 64px;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    .section-three{
+    padding-top: 120px;
+    padding-bottom: 120px;
+    }
+    .flexbox-container {
+    flex-direction: row;
+    gap: 16px;
+    justify-content: space-between;
+    }
 }
 
 /* customers */
