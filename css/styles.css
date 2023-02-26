@@ -100,8 +100,20 @@ color: var(--primary-txt-cl);
 
 .container-header {
 display: flex;
-align-items: center;    
+align-items: center;
+padding: 24px 0px 24px 16px;    
     
+}
+
+.button-hamburger {
+background-color: transparent;
+border: none;
+margin-left: 248px;
+}
+
+.menu-hamburger {
+width: 32px;
+height: 22px;
 }
 
 .header-portfolio {
@@ -110,7 +122,8 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 }
 
 .nav-header {
-    display: flex;
+    display: none;
+    /* display: flex; */
 }
 
 .nav.current::after {
@@ -141,18 +154,19 @@ transition-property: color;
 }
 
 .address {
-    margin-left: auto;
+    display: none;
+    /* margin-left: auto;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: color;
+    transition-property: color; */
 }
 
-.contact {
+/* .contact {
 font-style: normal;
 font-size: 16px;
 line-height: calc(24 /16);
 color: #2E2F42;
-}
+} */
 
 .nav:hover,
 .nav:focus,
@@ -167,7 +181,8 @@ color: var(--hover-bt);
 font-family: 'Raleway';
 font-weight: 800;
 font-size: 18px;
-line-height: calc(24 / 18);
+line-height: calc(21 / 18);
+/* line-height: calc(24 / 18); */
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: var(--secondary-bg-cl);
@@ -185,9 +200,55 @@ color: var(--secondary-bg-cl);
 
 .flexbox-container-adr {
     display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-left: auto;
+    /* justify-content: space-between;
+    gap: 40px; */
+
+}
+
+@media screen and (min-width:768px) {
+    .container-header {
+     padding: 0px;
+    }
+    .button-hamburger {
+    display: none; 
+    }
+    .nav-header {
+     display: flex;
+    }
+    .address {
+    display: contents;
+    /* margin-left: auto; */
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color;
+    }
+    .contact {
+     font-size: 12px;
+    line-height: calc(16 /12);
+    letter-spacing: 0.04em;
+    margin: 0px;
+    }
+    .contact-adr {
+    font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .flexbox-container-adr {
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     gap: 40px;
-
+    }
+    .contact {
+        font-style: normal;
+        font-size: 16px;
+        line-height: calc(24 /16);
+        color: #2E2F42;
+        }
 }
 
 
