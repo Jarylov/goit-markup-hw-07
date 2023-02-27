@@ -634,11 +634,6 @@ border: 1px solid #404BBF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.section {
-    padding-top: 96px;
-    padding-bottom: 120px;
-}
-
 
 
 
@@ -646,6 +641,21 @@ border: 1px solid #404BBF;
           /* portfolio */
 /* ======================== */
 
+
+.section {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    /* padding-top: 96px;
+    padding-bottom: 120px; */
+}
+
+.card-portf {
+width: 396px;
+height: 400px;
+background: #FFFFFF;
+box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+border-radius: 0px 0px 4px 4px;
+}
 
 
 .tumb {
@@ -674,18 +684,22 @@ border: 1px solid #404BBF;
 
 .flexbox-container-filter {
 display: flex;
-justify-content: space-between;
+flex-wrap: wrap;
+row-gap: 16px;
+column-gap: 24px;
+margin-bottom: 56px;
+/* justify-content: space-between;
 margin-bottom: 72px;
 width: 586px;
 
 margin-right: auto;
-margin-left: auto;
+margin-left: auto; */
 }
 
 .flexbox-container-card {
 display: flex;
 flex-wrap: wrap;
-column-gap: 24px;
+column-gap: 16px;
 row-gap: 48px;
 }
 
@@ -735,6 +749,26 @@ color: var(--primary-txt-cl);
 
 .team {
 background: var(--light-bg)
+}
+
+@media screen and (min-width:768px) {
+    .section {
+    padding-top: 64px;
+    padding-bottom: 96px;
+            /* padding-top: 96px;
+        padding-bottom: 120px; */
+    }
+
+    .flexbox-container-filter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 64px;
+    /* justify-content: space-between;
+    width: 586px; */
+    }
+    
 }
 
 
@@ -990,13 +1024,19 @@ fill: #FFFFFF;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 408px;
+    width: 392px;
     min-height: 576px;
     background-color: #FCFCFC;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
 
     transition: transform 250ms var(--timing-function)
+}
+
+@media screen and (min-width:768px) {
+    .modal {
+    width: 408px;
+    }
 }
 
 .backdrop.is-hidden .modal {
