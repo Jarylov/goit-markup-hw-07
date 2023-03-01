@@ -678,9 +678,13 @@ border: 1px solid #404BBF;
     padding-bottom: 120px; */
 }
 
+.card-project {
+width: 395px;
+    height: 400px;
+}
+
 .card-portf {
-width: 396px;
-height: 400px;
+
 background: #FFFFFF;
 box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 border-radius: 0px 0px 4px 4px;
@@ -688,7 +692,7 @@ border-radius: 0px 0px 4px 4px;
 
 
 .tumb {
-    width: 396px;
+    width: 395px;
     position: relative;
     overflow: hidden;
 }
@@ -718,30 +722,17 @@ flex-wrap: wrap;
 row-gap: 16px;
 column-gap: 24px;
 margin-bottom: 56px;
-/* justify-content: space-between;
-margin-bottom: 72px;
-width: 586px;
-
-margin-right: auto;
-margin-left: auto; */
 }
 
 .flexbox-container-card {
 display: flex;
 flex-wrap: wrap;
-/* flex-direction: column; */
 align-items: center;
 row-gap: 48px;
-/* flex-wrap: wrap;
-column-gap: 16px;
-row-gap: 48px; */
 }
 
 .card-project:hover,
 .card-project:focus {
-    
-/* width: 360px;
-height: 420px; */
 box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
@@ -790,8 +781,6 @@ background: var(--light-bg)
     .section {
     padding-top: 64px;
     padding-bottom: 96px;
-            /* padding-top: 96px;
-        padding-bottom: 120px; */
     }
 
     .flexbox-container-filter {
@@ -800,14 +789,11 @@ background: var(--light-bg)
     justify-content: center;
     gap: 24px;
     margin-bottom: 64px;
-    /* justify-content: space-between;
-    width: 586px; */
     }
 
     .flexbox-container-card {
         display: flex;
         flex-wrap: wrap;
-        /* justify-content: space-between; */
         column-gap: 24px;
         row-gap: 72px;
     }
@@ -827,7 +813,36 @@ background: var(--light-bg)
         width: 356px;
     }
 
-    
+@media screen and (min-width:1200px) {
+    .section {
+        padding-top: 96px;
+        padding-bottom: 120px;
+    }
+
+    .flexbox-container-filter {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 72px;
+        width: 586px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .flexbox-container-card {
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 48px;
+    }
+
+    .card-project,
+    .card-project-content {
+         width: 360px;
+    }
+
+    .card-portf {
+        width: 360px;
+        height: 420px;
+    }
 }
 
 
