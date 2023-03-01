@@ -688,6 +688,7 @@ border-radius: 0px 0px 4px 4px;
 
 
 .tumb {
+    width: 396px;
     position: relative;
     overflow: hidden;
 }
@@ -727,9 +728,10 @@ margin-left: auto; */
 
 .flexbox-container-card {
 display: flex;
-flex-direction: column;
+flex-wrap: wrap;
+/* flex-direction: column; */
 align-items: center;
-gap: 48px;
+row-gap: 48px;
 /* flex-wrap: wrap;
 column-gap: 16px;
 row-gap: 48px; */
@@ -738,8 +740,8 @@ row-gap: 48px; */
 .card-project:hover,
 .card-project:focus {
     
-width: 360px;
-height: 420px;
+/* width: 360px;
+height: 420px; */
 box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
@@ -751,6 +753,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 
 
 .card-project-content {
+    width: 396px;
     padding: 32px 16px ;
     border: 1px solid #E7E9FC;
     border-top: none;
@@ -800,6 +803,30 @@ background: var(--light-bg)
     /* justify-content: space-between;
     width: 586px; */
     }
+
+    .flexbox-container-card {
+        display: flex;
+        flex-wrap: wrap;
+        /* justify-content: space-between; */
+        column-gap: 24px;
+        row-gap: 72px;
+    }
+    .card-portf {
+        width: 356px;
+        height: 420px;
+        background: #FFFFFF;
+        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+        border-radius: 0px 0px 4px 4px;
+    }
+
+    .card-project,
+    .card-project-content {
+        width: 356px;
+    }
+    .tumb {
+        width: 356px;
+    }
+
     
 }
 
