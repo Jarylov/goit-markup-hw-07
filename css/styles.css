@@ -1309,8 +1309,8 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
     position: fixed;
     top: 0;
     left: 0;
-    width: 428px;
-    height: 796px;
+    width: 100vw;
+    height: 100vh;
     padding: 32px;
     background-color: var(--accent-txt-cl);
     z-index: 999;
