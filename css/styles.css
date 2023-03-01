@@ -95,14 +95,14 @@ color: var(--primary-txt-cl);
 .container-header {
 display: flex;
 align-items: center;
-/* padding: 24px 0px 24px 16px;     */
-    
+padding-top: 24px;
+padding-bottom: 24px;
 }
 
 .button-hamburger {
 background-color: transparent;
 border: none;
-margin-left: 248px;
+margin-left: auto;
 }
 
 .menu-hamburger {
