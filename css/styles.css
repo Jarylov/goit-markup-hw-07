@@ -727,9 +727,12 @@ margin-left: auto; */
 
 .flexbox-container-card {
 display: flex;
-flex-wrap: wrap;
+flex-direction: column;
+align-items: center;
+gap: 48px;
+/* flex-wrap: wrap;
 column-gap: 16px;
-row-gap: 48px;
+row-gap: 48px; */
 }
 
 .card-project:hover,
