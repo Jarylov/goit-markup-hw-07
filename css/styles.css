@@ -528,10 +528,11 @@ h2 {
         padding-bottom: 104px;
     }
 
-    .flexbox-container {
-        flex-direction: row;
-        row-gap: 16px;
-        column-gap: 64px;
+    .flexbox-container-team {
+        flex-wrap: wrap;
+        flex-direction: initial;
+        row-gap: 64px;
+        column-gap: 24px;
     }
 }
 
@@ -541,7 +542,7 @@ h2 {
         padding-bottom: 120px;
     }
 
-    .flexbox-container {
+    .flexbox-container-team {
         flex-direction: row;
         gap: 16px;
         justify-content: space-between;
