@@ -193,6 +193,7 @@ body {
 
 @media screen and (min-width:768px) {
     .container-header {
+        padding-top: 0px;
         padding-bottom: 0px;
     }
 
@@ -213,6 +214,7 @@ body {
 
     .contact {
         font-size: 12px;
+        font-style: normal;
         line-height: calc(16 /12);
         letter-spacing: 0.04em;
         margin: 0px;
@@ -235,13 +237,21 @@ body {
     max-width: 1440px;
     background-color: #2E2F42;
     padding: 192px 0px;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office\ 1.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Hero/Dark-bg_mob@1x.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-@media screen and (min-width: 480px) {
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Hero/Dark-bg_mob@2x.jpg);
+    }
+}
+
+@media screen and (min-width: 768px) {
     .hero {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Hero/Dark-bg_tab@1x.jpg);
     }
@@ -255,7 +265,7 @@ body {
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
     .hero {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Hero/people-office-1_desk@1x.jpg);
     }
@@ -392,8 +402,6 @@ body {
     .title-one {
         font-size: 20px;
         line-height: calc(24/20);
-        margin-top: 8px;
-        margin-bottom: 8px;
     }
 
     .txt-one {
@@ -477,7 +485,7 @@ h2 {
 }
 
 
-.flexbox-container {
+.flexbox-container-team {
     display: flex;
     flex-direction: column;
     gap: 72px;
@@ -1373,10 +1381,10 @@ h2 {
     left: 0;
     width: 100vw;
     height: 100vh;
-    padding: 32px;
+    padding: 80px 40px 40px 40px;
     background-color: var(--accent-txt-cl);
     z-index: 999;
-
+    overflow: auto;
     transform: translateX(100%);
     transition: transform 250ms ease-in-out;
 }
@@ -1389,7 +1397,9 @@ h2 {
     position: absolute;
     top: 48px;
     right: 48px;
-    color: #fff;
+    color: #000000;
+    background: #E7E9FC;
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 
@@ -1397,8 +1407,8 @@ h2 {
     display: flex;
     gap: 40px;
     flex-direction: column;
-    padding: 0;
-    margin: 80px 0px 0px 40px;
+    padding: 0px;
+    margin: 0px;
     list-style: none;
 }
 
@@ -1427,7 +1437,7 @@ h2 {
     font-weight: 600;
     font-size: 36px;
     line-height: calc(40 / 36);
-    color: var(--primary-txt-cl);
+    color: var(--secondary-bg-cl);
     text-decoration: none;
 }
 
