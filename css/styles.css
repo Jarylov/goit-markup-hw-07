@@ -186,9 +186,12 @@ body {
 
 .flexbox-container-adr {
     display: flex;
-    flex-direction: column;
-    gap: 4px;
+   justify-content: space-between;
+    gap: 40px;
     margin-left: auto;
+    /* flex-direction: column;
+    gap: 4px;
+    margin-left: auto; */
 }
 
 @media screen and (min-width:768px) {
@@ -213,17 +216,17 @@ body {
     }
 
     .contact {
-        font-size: 12px;
+        font-size: 16px;
         font-style: normal;
-        line-height: calc(16 /12);
+        line-height: calc(24 /16);
         letter-spacing: 0.04em;
         margin: 0px;
     }
 
     .contact-adr {
         font-weight: 400;
-        font-size: 12px;
-        line-height: calc(16 / 12);
+        font-size: 16px;
+        line-height: calc(24 / 16);
         letter-spacing: 0.04em;
     }
 }
@@ -236,7 +239,7 @@ body {
     margin: 0 auto;
     max-width: 1440px;
     background-color: #2E2F42;
-    padding: 192px 0px;
+    padding: 112px 0px;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Hero/Dark-bg_mob@1x.jpg);
     background-size: cover;
     background-position: center;
